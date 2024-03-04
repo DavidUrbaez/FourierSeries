@@ -28,7 +28,7 @@ function setup() {
 function draw() {
 
     background(0);
-    translate(windowWidth * 0.15, 200);
+    translate(windowWidth * 0.15, height / 2);
 
     let x = 0;
     let y = 0;
