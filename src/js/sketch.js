@@ -15,7 +15,7 @@ function setup() {
 
     colorMode(HSB, 1, 1, 1);
 
-    myCanvas = createCanvas(displayWidth * 0.6, 400);
+    myCanvas = createCanvas(windowWidth * 0.6, windowHeight * 0.8 * 0.8);
     myCanvas.parent("CanvasDiv");
 
 
@@ -28,7 +28,7 @@ function setup() {
 function draw() {
 
     background(0);
-    translate(displayWidth * 0.15, 200);
+    translate(windowWidth * 0.15, 200);
 
     let x = 0;
     let y = 0;
@@ -73,7 +73,7 @@ function draw() {
     time += 0.02;
 
 
-    if (wave.length > int(200 / 600 * displayWidth * 0.8)) {
+    if (wave.length > int(200 / 600 * windowWidth * 0.8)) {
         wave.pop();
     }
 }
